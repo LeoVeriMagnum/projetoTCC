@@ -114,7 +114,7 @@ h3 {
   color: #112842;
   text-shadow:none;
 }
-
+/* FOOTER */
 .grid{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -125,11 +125,27 @@ h3 {
 
 .grid .element{
   display: flex;
-  background-color: #8ca0ff;
+  flex-direction: column;
+  background-color: #ece7d5;
   width: 200px;
   height: 200px;
-  border:1px solid black;
+  border:2px solid black;
+  border-radius: 20px;
+  border-style:dotted;
 }
+
+.grid .element img{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.grid .element a{
+  font-size: 12px;
+  color: #000;
+}
+
+/* FIM FOOTER*/
 @media all and (max-width: 820px) {
   section.module h2 {
     font-size: 32px;
